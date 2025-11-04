@@ -35,7 +35,7 @@
 }
 
 .search-wrapper{
-    gap: 0 16px;
+    gap: 0 clamp(0.4rem,3vw,1rem);
 } 
 
 .search-bar{
