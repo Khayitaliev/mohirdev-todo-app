@@ -32,7 +32,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
 }
 
 .search-wrapper{
@@ -43,13 +42,17 @@
     position: relative;
 }
 
-.search-icon{
+.search-button{
     position: absolute;
-    top: 10px;
+    top: 50%;
     right: 16px;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+
 }
 .search-input{
-    padding: 11px 16px;
+    padding: 11px 100px 11px 16px;
     border: 1px solid var(--all-btn-cl);
     border-radius: 5px;
 }
@@ -71,3 +74,8 @@
     border-radius: 5px;
 }
 
+
+.all-button,
+.search-button{
+    cursor: pointer;
+}
