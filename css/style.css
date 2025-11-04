@@ -153,3 +153,4 @@ body{
 .check-box:checked + .checkbox-title .check-icon__box{
     background-color: var(--all-btn-cl);
 }
+
