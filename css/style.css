@@ -2,6 +2,14 @@
     --all-btn-cl:#6C63FF;
     --white-cl:#fff;
 }
+
+@font-face {
+    font-family: 'Kanit';
+    src: url(/fonts/Kanit/Kanit-Medium.ttf);
+    font-style: swap;
+    font-weight: 500;
+}
+
 *,
 *::before,
 *::after{
@@ -11,6 +19,9 @@
     text-decoration: none;
 }
 
+body{
+    font-family: 'Kanit',sans-serif;
+}
 .container{
     max-width: 1140px;
     margin: 0 auto;
@@ -28,7 +39,8 @@
 }
 
 .search-wrapper,
-.all-button{
+.all-button,
+.note-list__wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,4 +90,21 @@
 .all-button,
 .search-button{
     cursor: pointer;
+}
+
+.note-list__wrapper{
+    padding: clamp(15px,3vw,30px) 0;
+}
+
+.checkbox-title{
+    font-size: clamp(12px,3vw,20px);
+}
+.note-list-icon__inner{
+    display: flex;
+    gap: clamp(0.6rem,3vw,1rem);
+}
+
+.note-list-icon__inner img{
+    width: clamp(20px,3vw,30px);
+    height: auto;
 }

@@ -8,6 +8,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Header -->
     <header>
       <div class="container">
         <div class="header-wrapper">
@@ -15,25 +16,48 @@
         </div>
       </div>
     </header>
+    <!-- /End Header -->
+
+    <!-- Search wrapper -->
     <section>
       <div class="container">
         <div class="search-wrapper">
           <!-- Search bar -->
           <div class="search-bar">
-             <form action="#" method="get">
-              <input type="search" name="search" placeholder="Search note..." id="search" class="search-input" />
+            <form action="#" method="get">
+              <input
+                type="search"
+                name="search"
+                placeholder="Search note..."
+                id="search"
+                class="search-input"
+              />
               <button class="search-button" type="submit">
-                <img src="icons/search.svg" alt="search-icon"  />
+                <img src="icons/search.svg" alt="search-icon" />
               </button>
             </form>
-            
-             
           </div>
           <!-- /End Search bar -->
-           <a href="#" class="all-button">
+          <a href="#" class="all-button">
             <span>ALL</span>
-            <img src="icons/chevron-top.svg" alt="chevron-icon">
-           </a>
+            <img src="icons/chevron-top.svg" alt="chevron-icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- /End Search wrapper -->
+
+    <section>
+      <div class="container">
+        <div class="note-list__wrapper">
+          <form action="#" method="get">
+            <input type="checkbox" id="check" name="check" class="check-box" />
+            <label for="check" class="checkbox-title">NOTE#1</label>
+          </form>
+          <div class="note-list-icon__inner">
+            <img src="icons/pen.svg" alt="pen-icon" />
+            <img src="icons/trash.svg" alt="trash-icon" />
+          </div>
         </div>
       </div>
     </section>
