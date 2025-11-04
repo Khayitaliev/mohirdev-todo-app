@@ -1,1 +1,1 @@
-link for todo app thunderous-zuccutto-222cd7.netlify.app
+link for todo app https://thunderous-zuccutto-222cd7.netlify.app/
