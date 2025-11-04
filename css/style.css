@@ -101,7 +101,7 @@ body{
 }
 
 .checkbox-title{
-    font-size: clamp(12px,3vw,20px);
+    font-size: clamp(14px,3vw,20px);
 }
 
 .note-list-icon__inner{
@@ -118,9 +118,31 @@ body{
     display: none;
 }
 .checkbox-title{
-    position: relative;
+    display: flex;
+    align-items: center;
+    gap: clamp(0.6rem,3vw,1rem);
 }
 
 
+.check-icon__box{
+    width: 26px;
+    height: 26px;
+    border: 1px solid var(--all-btn-cl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.check-icon__box .check-icon{
+    display: none;
+}
 
 
+.check-box:checked + .checkbox-title .check-icon__box .check-icon{
+    display: block;
+}
+
+.check-box:checked + .checkbox-title .check-icon__box{
+    background-color: var(--all-btn-cl);
+}
