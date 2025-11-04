@@ -17,6 +17,12 @@
     padding: 0 1vw;
 }
 
+.header-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: clamp(20px,3vw,40px) 0;
+}
 .header-title{
     font-size: clamp(1.5rem,3vw,2rem);
 }
@@ -44,6 +50,8 @@
 }
 .search-input{
     padding: 11px 16px;
+    border: 1px solid var(--all-btn-cl);
+    border-radius: 5px;
 }
 
 
